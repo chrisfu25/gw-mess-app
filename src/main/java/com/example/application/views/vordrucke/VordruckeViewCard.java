@@ -12,28 +12,23 @@ import com.vaadin.flow.component.template.Id;
 @Tag("vordrucke-view-card")
 public class VordruckeViewCard extends LitTemplate {
 
-    @Id
-    private Image image;
+	@Id private Image image;
 
-    @Id
-    private Span header;
+	@Id private Span header;
 
-    @Id
-    private Span subtitle;
+	@Id private Span subtitle;
 
-    @Id
-    private Paragraph text;
+	@Id private Paragraph text;
 
-    @Id
-    private Span badge;
+	@Id private Span badge;
 
-    public VordruckeViewCard(String text, String url) {
-        this.image.setSrc(url);
-        this.image.setAlt(text);
-        this.header.setText("Title");
-        this.subtitle.setText("Card subtitle");
-        this.text.setText(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.");
-        this.badge.setText("Label");
-    }
+	public VordruckeViewCard(String title, String subtitle, String altText,
+	                         String description, String imgUrl) {
+		this.image.setSrc(imgUrl);
+		this.image.setAlt(altText);
+		this.header.setText(title);
+		this.subtitle.setText(subtitle);
+		this.text.setText(description);
+		this.badge.setText(title);
+	}
 }
