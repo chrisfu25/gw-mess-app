@@ -133,7 +133,8 @@ public class MainLayout extends AppLayout {
 
                 new MenuItemInfo("Zuordnung A-Messgeraete", "lab la-amilia", ZuordnungAMessgeraeteView.class), //
 
-                new MenuItemInfo("Einsatztagebuch", "la la-newspaper", EinsatztagebuchView.class), //
+                /*new MenuItemInfo("Einsatztagebuch", "la la-newspaper",
+                                  EinsatztagebuchView.class), */
 
                 new MenuItemInfo("About", "la la-file", AboutView.class), //
 
